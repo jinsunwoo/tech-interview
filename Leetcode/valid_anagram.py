@@ -24,6 +24,7 @@ class Solution:
         return True
 
     # optimal - hashtable, neetcode solution. same approach but slightly better since two loops instead of three.
+    # t/c: O(n), s/c: O(n)
     def isAnagram3(self, s: str, t: str) -> bool:
         if len(s)!=len(t):
             return False
@@ -35,5 +36,4 @@ class Solution:
             if countS[key] != countT.get(key, 0):
                 return False
         return True
-    
     
